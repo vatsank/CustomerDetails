@@ -1,0 +1,17 @@
+<div class='row'>
+    <div class='col-md-4' *ngFor='let eachCustomer of custList'>
+
+        <div class='card'>
+
+            <div class="card-header">{{eachCustomer.name}}</div>
+            <div class='card-body'>
+                <img src='{{ "assets/"}}{{eachCustomer.image}}{{ ".png"}}' class="card-img card-img-top">
+                <h2>{{eachCustomer.id}}</h2>
+                <a id="showInfo" class="btn btn-primary" href="javascript:void()" (click)='getInfo()'>Show more</a>
+
+            </div>
+
+        </div>
+    </div>
+
+</div>
